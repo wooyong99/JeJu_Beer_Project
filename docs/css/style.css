@@ -1,0 +1,247 @@
+/* 폰트 */
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+html > body {
+	font-family:"GmarketSansMedium";
+}
+/* pc-top-bar구현 */
+
+.pc-top-bar{
+	border-bottom:1px solid rgba(0,0,0,0.2);
+}
+.con{
+	margin:0 auto;
+	max-width:1200px;
+}
+.wrap-1 > div{
+	margin: 40px 0;
+}
+/* wrap-1로고구현 */
+.img-box{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.wrap-1 > .img-box > img{
+	height:93.84px;
+}
+/* wrap-1 메뉴구현 */
+.wrap-1 > .menu-box{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	gap:15px;
+}
+.wrap-1 > .menu-box > * {
+	display:flex;
+	justify-content:flex-end;
+}
+.wrap-1 > .menu-box > .menu-1 > li > a{
+	font-size:12px;
+	margin:0 10px;
+	color:#888;
+	transition:color .3s;
+}
+.wrap-1 > .menu-box > .menu-1 > li:hover > a{
+	color:#666;
+}
+.wrap-1 > .menu-box > .menu-2 {
+	margin-right:10px;
+}
+.wrap-1 > .menu-box > .menu-2 > a>span{
+	color:white;
+	border-radius:50px;
+	padding:5px 20px;
+	font-size:14px;
+}
+.wrap-1 > .menu-box > .menu-2 > a:first-child>span{
+	display:block;
+	background-color:#ff7e6b;
+	border:1px solid #ff7e6b;
+	transition:background-color .3s;
+}
+.wrap-1 > .menu-box > .menu-2 > a:last-child>span{
+	display:block;
+	background-color:#1ecad3;
+	border:1px solid #1ecad3;
+	margin-left:15px;
+	transition:background-color .3s;
+}
+.wrap-1 > .menu-box > .menu-2 > a:first-child:hover>span{
+	color:#ff7e6b;
+	background-color:white;
+}
+.wrap-1 > .menu-box > .menu-2 > a:last-child:hover>span{
+	background-color: #10adb5;
+	border-color:#10adb5;
+}
+/* wrap-2의 menu-box2구현 */
+.menu-box2__menu > li > a{
+	display:flex;
+	height:100%;
+	padding:0 50px;
+	align-items:center;
+	font-size:14px;
+	color:#666;
+	transition:color .3s;
+}
+.menu-box2__menu > li:hover > a{
+	color:#999;
+}
+/* pc-top-bar구현끝 */
+/* mobile탑바구현 */
+.mobile-top-bar{
+	padding:10px 0;
+}
+.mobile-top-bar > .con > a > img{
+	width:103.88px;
+	margin-left:10px;
+}
+.moblie-top-bar__menu-btn > span {
+	margin-right:10px;
+	color:#1ecad3;
+	font-size:22px;
+}
+/* mobile탑바끝 */
+
+/* 섹션 구현 시작 */
+.section-banner{
+	min-height:593px;
+	background-position:50% 50%;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+/* 섹션 1 구현 시작 */
+.section-banner-1{
+	background-image:url(../images/섹션배너1.png);
+}
+.section-banner-1__widget-box > img{
+	height:173px;
+}
+.section-banner-1__detail-box > .img-box > img{
+	width:200px;
+}
+.section-banner-1__detail-box > .text-box {
+	width:600px;
+}
+/* 섹션 1 구현 끝 */
+/* 섹션 2 구현 시작 */
+.section-banner-2{
+	background-image:url(../images/섹션배너2.png);
+}
+.section-banner-2__widget-box > img{
+	height:91px;
+}
+.section-banner-2__detail-box > .img-box > img{
+	width:200px;
+}
+.section-banner-2__detail-box > .text-box{
+	width:600px;
+}
+/* 섹션 2 구현 끝 */
+/* 섹션 3 구현 시작 */
+.section-banner-3{
+	background-image:url(../images/섹션배너3.png);
+}
+.section-banner-3__widget-box > img{
+	height:86px;
+}
+.section-banner-3__detail-box > .img-box > img {
+	width:200px;
+}
+.section-banner-3__detail-box > .text-box{
+	width:600px;
+}
+/* 섹션 3 구현 끝 */
+/* 섹션 4 구현 시작 */
+.section-banner-4{
+	background-image:url(../images/섹션배너4.png);
+}
+.section-banner-4__widget-box > img{
+	height:84px;
+}
+.section-banner-4__detail-box > .img-box > img{
+	width:200px;
+}
+.section-banner-4__detail-box > .text-box{
+	width:600px;
+}
+/* 섹션 4 구현 끝 */
+/* 섹션 사이드 구현 시작 */
+.section-side__text-box{
+	color:#1ecad3;
+	font-size:20px;
+}
+.section-side__text-box > .text-box__emphasis{
+	color:white;
+	background-color:#1ecad3;
+	font-size:16px;
+}
+.brand-scroll > marquee{
+	width:1015px;
+	height:100%;
+}
+.brand-scroll > marquee > div{
+	display:inline-block;
+}
+.brand-scroll > marquee > div > img{
+	width:140px;
+	display:block;
+	padding:0 10px;
+}
+/* 섹션 사이드 구현 끝 */
+/* 섹션 구현 끝 */
+/* 모바일 섹션배너 구현 시작 */
+.mobile-section-banner .section-banner-1 {
+    background-image:url(../images/모바일배너1.png);
+}
+.mobile-section-banner .section-banner-2{
+    background-image:url(../images/모바일배너2.png);
+}
+.mobile-section-banner .section-banner-3{
+    background-image:url(../images/모바일배너3.png);
+}
+.mobile-section-banner .section-banner-4{
+    background-image:url(../images/모바일배너4.png);
+}
+/* 모바일 섹션배너 구현 끝 */
+
+
+/* 미디어 쿼리 */
+@media(min-width:992px){
+	.mobile-top-bar{
+		display:none;
+	}
+	.mobile-section-video{
+		display:none;
+	}
+	.mobile-section-banner{
+		display:none;
+	}
+}
+@media(max-width:992px) and (min-width:767px){
+	.pc-top-bar{
+		display:none;
+	}
+	.mobile-section-video{
+		display:none;
+	}
+	.pc-section-banner{
+		display:none;
+	}
+}
+@media(max-width:767px){
+	.pc-top-bar{
+		display:none;
+	}
+	.pc-section-video{
+		display:none;
+	}
+	.pc-section-banner{
+		display:none;
+	}
+}
